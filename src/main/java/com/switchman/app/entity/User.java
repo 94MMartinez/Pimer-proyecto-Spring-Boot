@@ -57,15 +57,16 @@ public class User implements Serializable {
 	private static final long serialVersionUID = 2895849443998897704L;
 
 
+
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY )//identificador unico 
+	@GeneratedValue(strategy = GenerationType.IDENTITY )
 	private Long id;
 	
 	@Column(length = 50)
 	private String name;
 
 	private String surname;
-
+	@Column(name="mail", nullable = false,length = 50, unique = true)
 	private String email;
 
 	private Boolean enable;

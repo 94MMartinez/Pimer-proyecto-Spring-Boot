@@ -14,6 +14,10 @@ import javax.persistence.Table;
 public class User implements Serializable {
 	
 
+
+
+	private static final long serialVersionUID = -4753326007747728778L;
+
 	public Long getId() {
 		return id;
 	}
@@ -53,8 +57,6 @@ public class User implements Serializable {
 	public void setEnable(Boolean enable) {
 		this.enable = enable;
 	}
-
-	private static final long serialVersionUID = 2895849443998897704L;
 
 
 
